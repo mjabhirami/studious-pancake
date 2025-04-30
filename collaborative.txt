@@ -1,0 +1,30 @@
+COLLABORATIVE REPO
+
+# 1. Clone your forked repository to your local machine
+git clone https://github.com/your-username/repo-name.git
+cd repo-name
+
+# 2. Add the upstream (original) repository
+git remote add upstream https://github.com/original-owner/repo-name.git
+
+# 3. Fetch latest changes from upstream
+git fetch upstream
+
+# 4. Switch to your local main branch
+git checkout main
+
+# 5. Merge upstream changes into your local main
+git merge upstream/main
+
+# 6. Push the updated main branch to your forked GitHub repo
+git push origin main
+
+# 7. Create and switch to a new branch for your changes
+git checkout -b feature-branch-name
+
+# 8. After making changes, stage and commit
+git add .
+git commit -m "Add new feature or fix"
+
+# 9. Push the branch to your forked repository
+git push origin feature-branch-name
